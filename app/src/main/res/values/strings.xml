@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">RESTService</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_name">Name</string>
+    <string name="prompt_phoneNumber">Phone Number</string>
+    <string name="prompt_note">Note</string>
+    <string name="action_register">Register</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_update">Update</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_reset">Reset</string>
+    <string name="action_sign_out">Sign out</string>
+    <string name="error_invalid_email">Este email es inválido</string>
+    <string name="error_field_required">Este campo es requerido</string>
+    <string name="info_label">User Informeichon</string>
+    <string name="error_url_not_found">URL inválido! El archivo no puede ser encontrado</string>
+    <string name="error_password_length">El pass debe tener por lo menos 5 caracteres</string>
+</resources>
