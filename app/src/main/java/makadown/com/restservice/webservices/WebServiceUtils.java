@@ -4,7 +4,6 @@ import android.content.ContentValues;
 import android.net.Uri;
 import android.util.Log;
 
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedWriter;
@@ -44,7 +43,7 @@ public class WebServiceUtils
         return requestJSONObject(serviceUrl, method, null, urlValues, bodyValues, false);
     }
 
-    public static JSONObject( String serviceUrl, METHOD method,
+    public static JSONObject requestJSONObject( String serviceUrl, METHOD method,
                               ContentValues headerValues,
                               ContentValues urlValues,
                               ContentValues bodyValues,
@@ -96,9 +95,9 @@ public class WebServiceUtils
         catch (IOException ioe ){
             Log.d(TAG, ioe.getMessage());
         }
-        catch (JSONException jsone ){
+       /* catch (JSONException jsone ){
             Log.d(TAG, jsone.getMessage());
-        }
+        }*/
         catch(Exception ex)
         {
             ex.printStackTrace();
@@ -110,12 +109,14 @@ public class WebServiceUtils
                  urlConnection.disconnect();
             }
         }
+        return null;
     }
 
     private static void addBasicAuthentication(HttpURLConnection urlConnection) {
     }
 
     private static String addParametersToUrl(String serviceUrl, ContentValues urlValues) {
+        return "";
     }
 
 
